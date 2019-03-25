@@ -9,6 +9,7 @@ provider "s3" {
 
 resource "s3_bucket" "bucket_create" {
 	bucket = "s3page"
+    s3_debug         = true
 }
 
 resource "s3_file" "upload_index_page" {
